@@ -49,12 +49,17 @@
 
         const knop = document.getElementById('krijnsCooleButton');
         
-        function MelsCooleButtonEvent()
+        function MelsCooleButtonEvent(event)
         {
             //alert("hier wordt iets heeeeel cools gedaan.... je weet toch");
             console.log("hello world");
             document.body.append("yoooooo");
             document.body.style.backgroundColor = 'hotpink';
+
+            if(event) 
+            {   
+                document.body.style.backgroundColor = 'red';
+            }
         }
 
         knop.addEventListener('click', MelsCooleButtonEvent);
