@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="bramsCooleHTMLElement">Cool he!</div>
+    <button id="krijnsCooleButton" style="width: 200px; height: 100px; background-color: yellow">Knopje</button> 
+    <button id="THIJMENS_SNAKECASED_KAMELENBUTTON" onclick="MelsCooleButtonEvent();">Klik hier op THijmen</button>
+    <script>
+        // Datatype String:  Letterlijke tekst
+        // Datatype Number:  Nummers, getallen, integers (zoals 1,2,3,4,5,-300,-4)
+        // Datatype Array:   Een lijst met waarden
+        // Datatype Boolean: TRUE of FALSE, 1 of 0 
+
+        // SCHRIJFWIJZE VOOR VARIABELEN EN FUNCTIES
+        // lowerCameCase
+        // UpperCamelCase
+        // UPPER_SNAKE_CASE
+        // lower_snake_case
+
+        var voornaam = "thijmen";
+
+        const voorNaam = "mathieu";
+        let VoorNaam = "bram";
+        
+        const pi = Math.PI; 
+        const element = document.getElementById('bramsCooleHTMLElement');
+
+        voornaam = "ebi";
+        // voorNaam = "michelle";
+        VoorNaam = "Soufyan";
+
+        console.log(`voornaam is ${voornaam}`);
+        console.log('voorNaam is '+voorNaam);
+        console.log("VoorNaam is "+VoorNaam);
+
+        console.log(element);
+
+        for(let i=0; i<10; i++)
+        {
+            console.log("Hallo Noah "+i);
+        }
+
+        //console.log(i);  // block scope, kan variabele i niet bereiken!
+
+        const knop = document.getElementById('krijnsCooleButton');
+        
+        function MelsCooleButtonEvent()
+        {
+            //alert("hier wordt iets heeeeel cools gedaan.... je weet toch");
+            console.log("hello world");
+            document.body.append("yoooooo");
+            document.body.style.backgroundColor = 'hotpink';
+        }
+
+        knop.addEventListener('click', MelsCooleButtonEvent);
+
+        //alert(knop);
+        //console.log(knop);
+
+        const knop2 = document.getElementById('THIJMENS_SNAKECASED_KAMELENBUTTON');
+
+    </script>
+</body>
+</html>
